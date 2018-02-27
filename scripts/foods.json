@@ -2,7 +2,7 @@ foods = [
   {
     "foodItemName": "Artichoke",
     "foodItemBenefits": ["skin","fat"],
-    "image": "../images/artichoke.jpg"
+    "image": "../awt-app/images/artichoke.jpg"
   },
   {
     "foodItemName": "Bell Pepper",
