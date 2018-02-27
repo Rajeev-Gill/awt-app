@@ -179,8 +179,11 @@ foodList.addEventListener('click', function(event){
   //If trouble sleeping is clicked populate the issues UL with mindFoods
   //####TO-DO Ensure list only gets populated if empty
   if (elementClicked.textContent == 'Artichoke') {
-    //Set image to image of artichoke
     var foodImage = document.querySelector('.foodImage');
+    var title = document.querySelector('.food-item-title');
+    //Set title to artichoke
+    title.textContent = 'Artichoke';
+    //Set image to image of artichoke
     foodImage.setAttribute('src', foods[0].image);
     //Get nutritional info for selected item
     getNutritionalInfo('11226');
