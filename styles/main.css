@@ -49,7 +49,7 @@ ul {
 }
 
 .screen1-sect1 {
-  padding: 100px 0 20px 0;
+  padding: 35% 0 20px 0;
   margin: 0 auto;
 }
 
@@ -102,9 +102,10 @@ ul.peppermint-dots > li.peppermint-active-dot > span {
     color: white;
     background: #00bd00;
     border-radius: 5px;
-    width: 103px;
-    padding: 3%;
+    width: 180px;
+    padding: 7%;
     text-align: center;
+    font-size: 1.4em;
 }
 
 .next:hover {
@@ -133,10 +134,31 @@ ul.peppermint-dots > li.peppermint-active-dot > span {
   margin: 20px auto;
 }
 
+.search input {
+  display: block;
+  margin: 10px auto 10px auto;
+  padding: 16px;
+  background: hsla(0, 0%, 93%, 1);
+  border: none;
+  min-width: 97%;
+  font-size: 1.4em;
+  text-align: center;
+  outline: none;
+  transition: outline 0.5s;
+}
+
+.search input::placeholder {
+  color: #d4d4d4;
+}
+
+.search input:focus {
+  outline: 2px solid green;
+}
+
 .list-header {
-  padding: 0 0 20px 20px;
-  margin: 0;
-  font-size: 1.2em;
+  margin: 20px auto;
+  font-size: 1em;
+  color: #A9E813;
 }
 
 .list {
@@ -146,7 +168,6 @@ ul.peppermint-dots > li.peppermint-active-dot > span {
 .issue {
   padding-left: 20px;
   padding: 20px 20px 20px 20px;
-  border-top: 1px solid gray;
   border-bottom: 1px solid gray;
   display: flex;
   justify-content: space-between;
@@ -190,6 +211,7 @@ ul.peppermint-dots > li.peppermint-active-dot > span {
   display: flex;
   align-items: center;
   padding-left: 20px;
+  border-bottom: 1px solid gray;
 }
 
 .controls h4 {
@@ -229,6 +251,12 @@ ul.peppermint-dots > li.peppermint-active-dot > span {
   align-items: center;
   /* width: 230px; */
   margin: 0 auto;
+}
+
+.food-info--header div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .food-info--header img {
