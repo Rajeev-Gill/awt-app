@@ -9,7 +9,7 @@ foods = [
     "foodItemName": "Bell Pepper",
     "foodItemBenefits": ["skin","fat"],
     "foodItemDesc": "Bell peppers - especially varieties that mature into dazzling shades of yellow, orange, and red - are well-known for the diverse vitamin content. ",
-    "image": "../awt-app/images/bellpepper.jpg"
+    "image": "../awt-app/images/bellpepper.jpeg"
   },
   {
     "foodItemName": "Carrot",

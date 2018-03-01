@@ -220,60 +220,6 @@ var items = document.querySelector('.food-items');
 var foodList = document.querySelector('.food-items');
 var foodItemClicked = '';
 
-//FoodList event listener
-foodList.addEventListener('click', function(event){
-  var elementClicked = event.target;
-  foodItemClicked = elementClicked.textContent;
-  console.log('Chosen food: ' + elementClicked.textContent);
-
-  //If trouble sleeping is clicked populate the issues UL with mindFoods
-  //####TO-DO Ensure list only gets populated if empty
-  if (elementClicked.textContent == 'Artichoke') {
-    generateFoodItem('Artichoke', foods[0].image, foods[0].foodItemDesc, '11226', 'artichoke');
-  }
-
-  if (elementClicked.textContent == 'Bell Pepper') {
-    generateFoodItem('Artichoke', foods[1].image, foods[1].foodItemDesc, '11226', 'pepper');
-  }
-
-  if (elementClicked.textContent == 'Carrot') {
-    generateFoodItem('Artichoke', foods[2].image, foods[2].foodItemDesc, '11226', 'carrot');
-  }
-
-  if (elementClicked.textContent == 'Dill') {
-    generateFoodItem('Artichoke', foods[3].image, foods[3].foodItemDesc, '11226', 'dill');
-  }
-
-  if (elementClicked.textContent == 'Fennel') {
-    generateFoodItem('Artichoke', foods[4].image, foods[4].foodItemDesc, '11226', 'fennel');
-  }
-
-  if (elementClicked.textContent == 'Green Beans') {
-    generateFoodItem('Artichoke', foods[5].image, foods[5].foodItemDesc, '11226', 'green bean');
-  }
-
-  if (elementClicked.textContent == 'Jalapeños') {
-    generateFoodItem('Artichoke', foods[6].image, foods[6].foodItemDesc, '11226', 'jalapeno');
-  }
-
-  if (elementClicked.textContent == 'Leeks') {
-    generateFoodItem('Artichoke', foods[7].image, foods[7].foodItemDesc, '11226', 'leek');
-  }
-
-  if (elementClicked.textContent == 'Onion') {
-    generateFoodItem('Artichoke', foods[8].image, foods[8].foodItemDesc, '11226', 'onion');
-  }
-
-  if (elementClicked.textContent == 'Parsnip') {
-    generateFoodItem('Artichoke', foods[9].image, foods[9].foodItemDesc, '11226', 'parsnip');
-  }
-
-  if (elementClicked.textContent == 'Radish') {
-    generateFoodItem('Artichoke', foods[10].image, foods[10].foodItemDesc, '11226', 'radish');
-  }
-
-});
-
 //Replace foodlist code with lots of these functions for each food item on food list
 function generateFoodItem(foodTitle, imageNumber, desc, ndbNo, recipeItem) {
   //Parameters:
@@ -299,7 +245,63 @@ function generateFoodItem(foodTitle, imageNumber, desc, ndbNo, recipeItem) {
   changeScreen(2,3);
 }
 
+//FoodList event listener
+foodList.addEventListener('click', function(event){
+  var elementClicked = event.target;
+  foodItemClicked = elementClicked.textContent;
+  console.log('Chosen food: ' + elementClicked.textContent);
 
+  //If trouble sleeping is clicked populate the issues UL with mindFoods
+  //####TO-DO Ensure list only gets populated if empty
+  if (elementClicked.textContent == 'Artichoke') {
+    generateFoodItem('Artichoke', foods[0].image, foods[0].foodItemDesc, '11226', 'artichoke');
+  }
+
+  if (elementClicked.textContent == 'Bell Pepper') {
+    generateFoodItem('Bell Pepper', foods[1].image, foods[1].foodItemDesc, '11226', 'pepper');
+  }
+
+  if (elementClicked.textContent == 'Carrot') {
+    generateFoodItem('Carrot', foods[2].image, foods[2].foodItemDesc, '11226', 'carrot');
+  }
+
+  if (elementClicked.textContent == 'Dill') {
+    generateFoodItem('Dill', foods[3].image, foods[3].foodItemDesc, '11226', 'dill');
+  }
+
+  if (elementClicked.textContent == 'Fennel') {
+    generateFoodItem('Fennel', foods[4].image, foods[4].foodItemDesc, '11226', 'fennel');
+  }
+
+  if (elementClicked.textContent == 'Green Beans') {
+    generateFoodItem('Green Beans', foods[5].image, foods[5].foodItemDesc, '11226', 'green bean');
+  }
+
+  if (elementClicked.textContent == 'Jalapeños') {
+    generateFoodItem('Jalapeños', foods[6].image, foods[6].foodItemDesc, '11226', 'jalapeno');
+  }
+
+  if (elementClicked.textContent == 'Kale') {
+    generateFoodItem('Kale', foods[7].image, foods[7].foodItemDesc, '11226', 'kale');
+  }
+
+  if (elementClicked.textContent == 'Leeks') {
+    generateFoodItem('Leeks', foods[7].image, foods[7].foodItemDesc, '11226', 'leek');
+  }
+
+  if (elementClicked.textContent == 'Onion') {
+    generateFoodItem('Onion', foods[8].image, foods[8].foodItemDesc, '11226', 'onion');
+  }
+
+  if (elementClicked.textContent == 'Parsnip') {
+    generateFoodItem('Parsnip', foods[9].image, foods[9].foodItemDesc, '11226', 'parsnip');
+  }
+
+  if (elementClicked.textContent == 'Radish') {
+    generateFoodItem('Radish', foods[10].image, foods[10].foodItemDesc, '11226', 'radish');
+  }
+
+});
 
 
 //----SCREEN 4----//

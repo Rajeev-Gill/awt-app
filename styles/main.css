@@ -263,6 +263,7 @@ ul.peppermint-dots > li.peppermint-active-dot > span {
 .food-info--header img {
   width: 130px;
   height: auto;
+  margin-right: 40px;
 }
 
 .food-info p {
