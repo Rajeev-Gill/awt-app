@@ -21,7 +21,7 @@ foods = [
     "foodItemName": "Dill",
     "foodItemBenefits": ["muscle","cholesterol"],
     "foodItemDesc": "Providing a tangy addition to pickles, salad dressing and fish dishes, fresh dill is available at markets during the summer and early fall while dried dill is available throughout the year." ,
-    "image": "../app/images/dill.jpg"
+    "image": "https://github.com/Rajeev-Gill/awt-app/blob/master/images/dill.jpg?raw=true"
   },
   {
     "foodItemName": "Fennel",

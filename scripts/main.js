@@ -392,7 +392,8 @@ function getRecipe(ingredient) {
         var recipes = p.recipes;
         console.log(recipes);
         //Grab recipe list
-        var recipeList = document.querySelector('.recipe-list')
+        var recipeList = document.querySelector('.recipe-list');
+        recipeList.innerHTML = '';
         //For each recipe item
         for (var i = 0; i < recipes.length; i++) {
           //Create a list item
