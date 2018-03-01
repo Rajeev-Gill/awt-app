@@ -15,7 +15,6 @@ body {
   padding: 0;
   height: 100%;
   width: 100%;
-  overflow: hidden;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
@@ -47,6 +46,7 @@ ul {
 
 #screen1 {
   /* padding-left: 50px; */
+  overflow: hidden;
 }
 
 .screen1-sect1 {
