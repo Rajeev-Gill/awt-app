@@ -95,7 +95,8 @@ ul.peppermint-dots > li.peppermint-active-dot > span {
 }
 
 .screen1-sect3 {
-  margin: 0 auto;
+    margin: 0 auto;
+    margin-bottom: 100px;
 }
 
 .next {
