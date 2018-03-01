@@ -2,51 +2,73 @@ foods = [
   {
     "foodItemName": "Artichoke",
     "foodItemBenefits": ["skin","fat"],
+    "foodItemDesc": "With its beautiful armour-like exterior and delicious savoury-sweet heart, this vegetable is technically not a vegetable at all but the bud of a flowering plant from the thistle family.",
     "image": "../awt-app/images/artichoke.jpg"
   },
   {
     "foodItemName": "Bell Pepper",
-    "foodItemBenefits": ["skin","fat"]
+    "foodItemBenefits": ["skin","fat"],
+    "foodItemDesc": "Bell peppers - especially varieties that mature into dazzling shades of yellow, orange, and red - are well-known for the diverse vitamin content. ",
+    "image": "../awt-app/images/bellpepper.jpg"
   },
   {
     "foodItemName": "Carrot",
-    "foodItemBenefits": ["skin","fat","cancer"]
+    "foodItemBenefits": ["skin","fat","cancer"],
+    "foodItemDesc": "Carrots are a vegetable commonly enjoyed in both raw and cook form. They are rich in beta-carotene and assist bone health",
+    "image": "../awt-app/images/carrot.jpeg"
   },
   {
     "foodItemName": "Dill",
     "foodItemBenefits": ["muscle","cholesterol"],
+    "foodItemDesc": "Providing a tangy addition to pickles, salad dressing and fish dishes, fresh dill is available at markets during the summer and early fall while dried dill is available throughout the year." ,
     "image": "../app/images/dill.jpg"
   },
   {
     "foodItemName": "Fennel",
-    "foodItemBenefits": ["skin","fat","muscle","cholesterol","cancer"]
+    "foodItemBenefits": ["skin","fat","muscle","cholesterol","cancer"],
+    "foodItemDesc": "Fennel is crunchy and slightly sweet, adding a refreshing contribution to the mediterranean cuisines. Most often associated with Italian cooking,",
+    "image": "../awt-app/images/fennel.jpeg"
   },
   {
     "foodItemName": "Green Beans",
-    "foodItemBenefits": ["cancer","cholesterol","immune"]
+    "foodItemBenefits": ["cancer","cholesterol","immune"],
+    "foodItemDesc": "Commonly available In the produce section of your local store. Green beans and other legumes provide concentrated amounts of fiber, folate, and numerous minerals.",
+    "image": "../awt-app/images/greenbeans.jpeg"
   },
   {
     "foodItemName": "Jalapeños",
-    "foodItemBenefits": ["cancer","immune"]
+    "foodItemBenefits": ["cancer","immune"],
+    "foodItemDesc": "Delicious in cornbread, mango salsa, stuffed with cream cheese or often enjoyed as poppers at the local pub, most everyone knows the jalapeno pepper can be one serious pepper.",
+    "image": "../awt-app/images/jalapenos.jpeg"
   },
   {
     "foodItemName": "Kale",
-    "foodItemBenefits": ["Cancer","fat","antImf"]
+    "foodItemBenefits": ["Cancer","fat","antImf"],
+    "foodItemDesc": "One cup of kale has only 36 calories, 5 grams of fiber and 0 grams of fat. It is great for aiding in digestion and elimination with its great fiber content. It’s also filled with so many nutrients, vitamins, folate and magnesium as well as those listed below.",
+    "image": "../awt-app/images/kale.jpeg"
   },
   {
     "foodItemName": "Leeks",
-    "foodItemBenefits": ["cancer","cholesterol","immune"]
+    "foodItemBenefits": ["cancer","cholesterol","immune"],
+    "foodItemDesc": "Like garlic and onion, leeks are a member of the allium family, but have their own distinct flavour - quite harsh when raw (only very young leeks are eaten this way) but, when cooked, very delicate, like a mild onion but with a hint of sweetness.",
+    "image": "../awt-app/images/leeks.jpeg"
   },
   {
     "foodItemName": "Onion",
-    "foodItemBenefits": ["cancer","cholesterol"]
+    "foodItemBenefits": ["cancer","cholesterol"],
+    "foodItemDesc": "Onions were historically as a preventative medicine during epidemics of cholera and the plague. They were apparently eaten by Roman emperor Nero as a cure for colds.",
+    "image": "../awt-app/images/onion.jpeg"
   },
   {
     "foodItemName": "Parsnip",
-    "foodItemBenefits": ["antImf","fat"]
+    "foodItemBenefits": ["antImf","fat"],
+    "foodItemDesc": "Parsnips have creamy white colour and an earthy but sweet flavour and are great used in hearty winter roasts, soups and stews.",
+    "image": "../awt-app/images/parsnip.jpeg"
   },
   {
     "foodItemName": "Radish",
-    "foodItemBenefits": ["antImf","cholesterol"]
+    "foodItemBenefits": ["antImf","cholesterol"],
+    "foodItemDesc": "Radishes have a peppery flavour and a crisp, crunchy texture. Among the most popular varieties are the small, cherry-sized common variety which has a red skin and white flesh",
+    "image": "../awt-app/images/radish.jpeg"
   }
 ]

@@ -12,9 +12,11 @@ screens[0] = document.getElementById('screen1');
 screens[1] = document.getElementById('screen2');
 screens[2] = document.getElementById('screen3');
 screens[3] = document.getElementById('screen4');
+screens[4] = document.getElementById('screen5');
 
 var button = document.querySelectorAll('.next');
 var backButton = document.querySelectorAll('.back');
+var browseAllFoodItems = document.querySelectorAll('.browse-button');
 var footers = document.querySelectorAll('.footer');
 
 var startScreen = screens[0];
@@ -25,6 +27,7 @@ var nextScreen  = screens[1];
 var nutrientDOMelements = [];
 
 //Food storage arrays
+var allFoodItems = [];
 var skin = [];
 var fat = [];
 var cancer = [];
@@ -32,6 +35,11 @@ var muscle = [];
 var cholesterol = [];
 var immune = [];
 var antImf = [];
+
+//Store all food items in an array
+for (var i = 0; i < foods.length; i++) {
+  allFoodItems.push(foods[i]);
+}
 
 //For each food item check if it belongs in a given category, if it does store it
 for (var i = 0; i < foods.length; i++) {
@@ -118,6 +126,17 @@ function createFilteredFoodList(foodType) { //pass in food storage array name
 
 }
 
+
+function setListHeader(headerText) {
+  //grab list header
+  var listSubject = document.getElementById('listSubject');
+  //make sure list header is empty
+  listSubject.textContent = '';
+  //set list header html to name of category clicked
+  listSubject.textContent = headerText;
+}
+
+
 //IssueList click listeners (Event delegation)
 issueList.addEventListener('click', function(event){
   var elementClicked = event.target;
@@ -125,40 +144,71 @@ issueList.addEventListener('click', function(event){
 
   //If trouble sleeping is clicked populate the issues UL with mindFoods
   if (elementClicked.textContent == 'Fat Fighting Foods') {
-    createFilteredFoodList(fat)
+    createFilteredFoodList(fat);
+    setListHeader(' fight fat');
     changeScreen(1,2);
   }
 
   if (elementClicked.textContent == 'Foods for Your Immune System') {
-    createFilteredFoodList(immune)
+    createFilteredFoodList(immune);
+    setListHeader(' improve your immune system');
     changeScreen(1,2);
   }
 
   if (elementClicked.textContent == 'Foods for Your Skin') {
-    createFilteredFoodList(skin)
+    createFilteredFoodList(skin);
+    setListHeader(' get clearer skin');
     changeScreen(1,2);
   }
 
   if (elementClicked.textContent == 'Foods for Sore Muscles') {
-    createFilteredFoodList(muscle)
+    createFilteredFoodList(muscle);
+    setListHeader(' sooth your muscles');
     changeScreen(1,2);
   }
 
   if (elementClicked.textContent == 'Foods for High Cholesterol') {
-    createFilteredFoodList(cholesterol)
+    createFilteredFoodList(cholesterol);
+    setListHeader(' lower your cholesterol');
     changeScreen(1,2);
   }
 
   if (elementClicked.textContent == 'Anti Cancer Foods') {
-    createFilteredFoodList(immune)
+    createFilteredFoodList(immune);
+    setListHeader(' protect against cancer');
     changeScreen(1,2);
   }
 
   if (elementClicked.textContent == 'Anti Inflammatory Foods') {
-    createFilteredFoodList(antImf)
+    createFilteredFoodList(antImf);
+    setListHeader(' reduce inflammation');
     changeScreen(1,2);
   }
 
+});
+
+//Add click listeners to  'browse all foods buttons'
+browseAllFoodItems[0].addEventListener('click', function(){
+  //Create food list containing all food items
+  createFilteredFoodList(allFoodItems);
+  //change screen
+  changeScreen(1,2);
+});
+
+//Add click listeners to  'browse all foods buttons'
+browseAllFoodItems[1].addEventListener('click', function(){
+  //Create food list containing all food items
+  createFilteredFoodList(allFoodItems);
+  //change screen
+  changeScreen(2,2);
+});
+
+//Add click listeners to  'browse all foods buttons'
+browseAllFoodItems[2].addEventListener('click', function(){
+  //Create food list containing all food items
+  createFilteredFoodList(allFoodItems);
+  //change screen
+  changeScreen(3,2);
 });
 
 
@@ -179,21 +229,78 @@ foodList.addEventListener('click', function(event){
   //If trouble sleeping is clicked populate the issues UL with mindFoods
   //####TO-DO Ensure list only gets populated if empty
   if (elementClicked.textContent == 'Artichoke') {
-    var foodImage = document.querySelector('.foodImage');
-    var title = document.querySelector('.food-item-title');
-    //Set title to artichoke
-    title.textContent = 'Artichoke';
-    //Set image to image of artichoke
-    foodImage.setAttribute('src', foods[0].image);
-    //Get nutritional info for selected item
-    getNutritionalInfo('11226');
-    //Get recipe for selected item
-    getRecipe('artichoke');
-    //Change screen to selected item
-    changeScreen(2,3);
+    generateFoodItem('Artichoke', foods[0].image, foods[0].foodItemDesc, '11226', 'artichoke');
+  }
+
+  if (elementClicked.textContent == 'Bell Pepper') {
+    generateFoodItem('Artichoke', foods[1].image, foods[1].foodItemDesc, '11226', 'pepper');
+  }
+
+  if (elementClicked.textContent == 'Carrot') {
+    generateFoodItem('Artichoke', foods[2].image, foods[2].foodItemDesc, '11226', 'carrot');
+  }
+
+  if (elementClicked.textContent == 'Dill') {
+    generateFoodItem('Artichoke', foods[3].image, foods[3].foodItemDesc, '11226', 'dill');
+  }
+
+  if (elementClicked.textContent == 'Fennel') {
+    generateFoodItem('Artichoke', foods[4].image, foods[4].foodItemDesc, '11226', 'fennel');
+  }
+
+  if (elementClicked.textContent == 'Green Beans') {
+    generateFoodItem('Artichoke', foods[5].image, foods[5].foodItemDesc, '11226', 'green bean');
+  }
+
+  if (elementClicked.textContent == 'Jalapeños') {
+    generateFoodItem('Artichoke', foods[6].image, foods[6].foodItemDesc, '11226', 'jalapeno');
+  }
+
+  if (elementClicked.textContent == 'Leeks') {
+    generateFoodItem('Artichoke', foods[7].image, foods[7].foodItemDesc, '11226', 'leek');
+  }
+
+  if (elementClicked.textContent == 'Onion') {
+    generateFoodItem('Artichoke', foods[8].image, foods[8].foodItemDesc, '11226', 'onion');
+  }
+
+  if (elementClicked.textContent == 'Parsnip') {
+    generateFoodItem('Artichoke', foods[9].image, foods[9].foodItemDesc, '11226', 'parsnip');
+  }
+
+  if (elementClicked.textContent == 'Radish') {
+    generateFoodItem('Artichoke', foods[10].image, foods[10].foodItemDesc, '11226', 'radish');
   }
 
 });
+
+//Replace foodlist code with lots of these functions for each food item on food list
+function generateFoodItem(foodTitle, imageNumber, desc, ndbNo, recipeItem) {
+  //Parameters:
+  //Name of food for 'title'
+  //Image of food Json foods[0].image
+  //ref to desc of food from JSON foods[0].foodItemDesc
+  //ndbNo sting
+  //Food2fork string
+  var foodImage = document.querySelector('.foodImage');
+  var title = document.querySelector('.food-item-title');
+  var itemDesc = document.getElementById('food-info-desc');
+  //Set title to artichoke
+  title.textContent = foodTitle;
+  //Set image to image of food item
+  foodImage.setAttribute('src', imageNumber);
+  //Set description to description of food item
+  itemDesc.textContent = desc
+  //Get nutritional info for selected item
+  getNutritionalInfo(ndbNo);
+  //Get recipe for selected item
+  getRecipe(recipeItem);
+  //Change screen to selected item
+  changeScreen(2,3);
+}
+
+
+
 
 //----SCREEN 4----//
 

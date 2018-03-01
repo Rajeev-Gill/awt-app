@@ -254,9 +254,10 @@ ul.peppermint-dots > li.peppermint-active-dot > span {
 }
 
 .food-info--header div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 21px auto;
 }
 
 .food-info--header img {
