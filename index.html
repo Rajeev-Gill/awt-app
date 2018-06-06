@@ -30,17 +30,16 @@
         <div id="screen1" class="active">
             <div class="row">
               <div class="screen1-sect1 col-4">
-                <img src="https://github.com/Rajeev-Gill/awt-app/blob/master/images/Logomark.png?raw=true" alt="">
+                <h1>Plena</h1>
               </div>
             </div>
             <div class="row">
               <div class="screen1-sect2 col-8 peppermint peppermint-inactive" id="peppermint">
                 <figure>
-                  <h3>We are what we eat</h3>
-                  <p>Explore your symptoms,<br>
-                    learn about the health <br>
-                    benefits of food and <br>
-                    collect recipes.</p>
+                  <h3>Find natural remedies</h3>
+                  <p>Learn how food products<br>
+                    can affect your mental<br>
+                    and physical health</p>
                     <p class="swipe">Swipe left to learn more</p>
                 </figure>
                 <figure> <img src="images/ob1.png" alt=""> </figure>
@@ -57,57 +56,192 @@
               </div>
             </div>
         </div>
+
+      <!-- SCREEN 2 -->
+
         <div id="screen2" class="hidden">
           <div class="header">
-            <img src="https://github.com/Rajeev-Gill/awt-app/blob/master/images/Logomark.png?raw=true" alt="">
-          </div>
-          <div class="controls">
-            <img src="images/arrow-left.png" class="back" alt="">
-            <h4 class="list-header">Choose by Health Issues/Food Benefits:</h4>
+            <img src="images/logomark.png" alt="">
           </div>
           <div class="search">
-            <input type="text" placeholder="Search for ingredients or foods..">
+            <input type="text" placeholder="Search">
           </div>
+
+          <div class="list-header">
+            <div id="symptoms">
+                <h2>SYMPTOMS</h2>
+              <div class="symptoms-arrow hidden"></div>
+            </div>
+            <div id="ingredients">
+               <h2>INGREDIENTS</h2>
+              <div class="ingredients-arrow"></div>
+            </div>
+          </div>
+
           <div class="list">
-            <!-- <h2 class="list-header">Choose by Health Issues/Food Benefits:</h2> -->
-            <ul class="issues">
-              <li class="issue issue-1">Fat Fighting Foods<img src="images/arrow-right.png" alt=""></li>
-              <li class="issue issue-2">Foods for Your Immune System<img src="images/arrow-right.png" alt=""></li>
-              <li class="issue issue-3">Foods for Your Skin<img src="images/arrow-right.png" alt=""></li>
-              <li class="issue issue-4">Foods for Sore Muscles<img src="images/arrow-right.png" alt=""></li>
-              <li class="issue issue-5">Foods for High Cholesterol<img src="images/arrow-right.png" alt=""></li>
-              <li class="issue issue-6">Anti Cancer Foods<img src="images/arrow-right.png" alt=""></li>
-              <li class="issue issue-7">Anti Inflammatory Foods<img src="images/arrow-right.png" alt=""></li>
+            <ul id="symptomList" class="hidden">
+              <li class="dropdown-button"><img class="dropdown-image" src="images/arrow-right.png" alt=""><p>Sore Throat</p>
+                <ul id="throatList" class="hidden second-level-list">
+                  <li><img src="images/arrow-right.png" alt="">Honey</li>
+                  <li><img src="images/arrow-right.png" alt="">Lemon</li>
+                  <li><img src="images/arrow-right.png" alt="">Turmeric</li>
+                  <li><img src="images/arrow-right.png" alt="">Ginger</li>
+                  <li><img src="images/arrow-right.png" alt="">Whiskey</li>
+                  <li><img src="images/arrow-right.png" alt="">Garlic</li>
+                </ul>
+              </li>
+              <li class="dropdown-button"><img class="dropdown-image" src="images/arrow-right.png" alt=""><p>Menstruation</p>
+                <ul id="menstList" class="hidden second-level-list">
+                  <li><img src="images/arrow-right.png" alt="">Yoghurt</li>
+                  <li><img src="images/arrow-right.png" alt="">Chamomile Tea</li>
+                  <li><img src="images/arrow-right.png" alt="">Whole Grains</li>
+                  <!-- <li><img src="images/arrow-right.png" alt="">Bananas</li>
+                  <li><img src="images/arrow-right.png" alt="">Fatty Fish</li>
+                  <li><img src="images/arrow-right.png" alt="">Broccoli</li>
+                  <li><img src="images/arrow-right.png" alt="">Spinach</li>
+                  <li><img src="images/arrow-right.png" alt="">Dark Chocolate</li> -->
+                </ul>
+              </li>
+              <li class="dropdown-button"><img class="dropdown-image" src="images/arrow-right.png" alt=""><p>Headaches</p>
+                <ul id="headList" class="hidden second-level-list">
+                  <li><img src="images/arrow-right.png" alt="">Jacket Potato</li>
+                  <li><img src="images/arrow-right.png" alt="">Watermelon</li>
+                  <li><img src="images/arrow-right.png" alt="">Coffee</li>
+                  <!-- <li><img src="images/arrow-right.png" alt="">Almonds</li>
+                  <li><img src="images/arrow-right.png" alt="">Spicy Salsa</li>
+                  <li><img src="images/arrow-right.png" alt="">Sesame Seeds</li> -->
+                </ul>
+              </li>
+              <li class="dropdown-button"><img class="dropdown-image" src="images/arrow-right.png" alt=""><p>Muscle Pain</p>
+                <ul id="muscleList" class="hidden second-level-list">
+                  <li><img src="images/arrow-right.png" alt="">Salmon</li>
+                  <li><img src="images/arrow-right.png" alt="">Cherries</li>
+                  <li><img src="images/arrow-right.png" alt="">Oranges</li>
+                </ul>
+              </li>
+              <li class="dropdown-button"><img class="dropdown-image" src="images/arrow-right.png" alt=""><p>Acne</p>
+                <ul id="acneList" class="hidden second-level-list">
+                  <li><img src="images/arrow-right.png" alt="">Green Tea</li>
+                  <li><img src="images/arrow-right.png" alt="">Oysters</li>
+                  <li><img src="images/arrow-right.png" alt="">Probiotics</li>
+                </ul>
+              </li>
+            </ul>
+            <ul id="ingredientList" class="active">
+              <li><img src="images/arrow-right.png" alt="">Honey</li>
+              <li><img src="images/arrow-right.png" alt="">Lemon</li>
+              <li><img src="images/arrow-right.png" alt="">Turmeric</li>
+              <li><img src="images/arrow-right.png" alt="">Ginger</li>
+              <li><img src="images/arrow-right.png" alt="">Whiskey</li>
+              <li><img src="images/arrow-right.png" alt="">Garlic</li>
+              <li><img src="images/arrow-right.png" alt="">Yoghurt</li>
+              <li><img src="images/arrow-right.png" alt="">Chamomile Tea</li>
+              <li><img src="images/arrow-right.png" alt="">Whole Grains</li>
+              <!-- <li><img src="images/arrow-right.png" alt="">Bananas</li>
+              <li><img src="images/arrow-right.png" alt="">Fatty Fish</li>
+              <li><img src="images/arrow-right.png" alt="">Broccoli</li>
+              <li><img src="images/arrow-right.png" alt="">Spinach</li>
+              <li><img src="images/arrow-right.png" alt="">Dark Chocolate</li> -->
+              <li><img src="images/arrow-right.png" alt="">Potato</li>
+              <li><img src="images/arrow-right.png" alt="">Watermelon</li>
+              <li><img src="images/arrow-right.png" alt="">Coffee</li>
+              <!-- <li><img src="images/arrow-right.png" alt="">Almonds</li>
+              <li><img src="images/arrow-right.png" alt="">Spicy Salsa</li>
+              <li><img src="images/arrow-right.png" alt="">Sesame Seeds</li>
+              <li><img src="images/arrow-right.png" alt="">Evening Primrose Oil</li> -->
+              <li><img src="images/arrow-right.png" alt="">Cherries</li>
+              <li><img src="images/arrow-right.png" alt="">Oranges</li>
+              <li><img src="images/arrow-right.png" alt="">Green Tea</li>
+              <li><img src="images/arrow-right.png" alt="">Oysters</li>
+              <li><img src="images/arrow-right.png" alt="">Fresh Fruit Juices</li>
+              <li><img src="images/arrow-right.png" alt="">Probiotics</li>
             </ul>
           </div>
-          <div class="browse-button">
-            <h2 class="browse">Browse All Foods<img src="images/browse.png" alt=""></h2>
-          </div>
-          <div class="footer">
+          <div class="footer"> <!-- New controls to go here -->
             <img src="images/Home.png" alt="">
           </div>
         </div>
+
         <div id="screen3" class="hidden">
           <div class="header">
-            <img src="https://github.com/Rajeev-Gill/awt-app/blob/master/images/Logomark.png?raw=true" alt="">
-          </div>
-          <div class="controls">
-            <img src="images/arrow-left.png" class="back" alt="">
-            <h4 class="list-header">Food/Ingredients<br><span>that will help you</span><span id="listSubject"></span></h4>
+            <img src="images/logomark.png" alt="">
           </div>
           <div class="search">
-            <input type="text" placeholder="Search for ingredients or foods..">
+            <input type="text" placeholder="Search">
           </div>
-          <div class="list">
-            <ul class="food-items"></ul>
+          <div class="list-header">
+            <div id="ingredientSymptoms">
+                <h2>SYMPTOMS</h2>
+              <div class="symptoms-arrow hidden"></div>
+            </div>
+            <div id="ingredientIngredients">
+               <h2>INGREDIENTS</h2>
+              <div class="ingredients-arrow"></div>
+            </div>
           </div>
-          <div class="browse-button">
-            <h2 class="browse">Browse All Foods<img src="images/browse.png" alt=""></h2>
+          <div class="location-bar">
+            <p><span id="symptomLocation">SYMPTOM</span><img src="images/arrow-right-grey.png" alt=""><span id="ingredientLocation">INGREDIENT</span></p>
+          </div>
+          <div class="ingredient-info">
+            <div class="ingredient-info-container">
+              <img src="" alt="" class="ingredient-info-img">
+              <h2 class="ingredient-info-header"></h2>
+            </div>
+            <p class="desc"></p>
+            <div class="nutritional-info">
+              <h2 class="nutrition-button">Tap to see nutritional information</h2>
+              <table class="nutritional-info--table">
+                <tr>
+                  <th class="left">Calories<span>(per 100g)</span></th>
+                  <th id="calories" class="right"></th>
+                </tr>
+                <tr>
+                  <th class="left">Fats<span>(per 100g)</span></th>
+                  <th id="fats" class="right"></th>
+                </tr>
+                <tr>
+                  <th class="left">Carbohydrates<span>(per 100g)</span></th>
+                  <th  id="carbs" class="right"></th>
+                </tr>
+                <tr>
+                  <th class="left">Fiber<span>(per 100g)</span></th>
+                  <th  id="fiber" class="right"></th>
+                </tr>
+                <!-- <tr>
+                  <th class="left">Sugar</th>
+                  <th  id="sugar" class="right">7.7g</th>
+                </tr> -->
+                <tr>
+                  <th class="left">Protein<span>(per 100g)</span></th>
+                  <th  id="proteins" class="right"></th>
+                </tr>
+                <tr>
+                  <th class="left">Vitamins</th>
+                  <th  id="vits" class="right"></th>
+                </tr>
+              </table>
+              <div class="recipe-container">
+                <h2 class="recipes">
+                  Tap to see recipes ideas
+                </h2>
+                <ul class="recipe-list">
+                </ul>
+              </div>
+              <div class="grocery-info-container">
+                <h2 class="grocery-header">Where can I buy this?</h2>
+                <ul class="grocery-list">
+
+                </ul>
+              </div>
+            </div>
           </div>
           <div class="footer">
             <img src="images/Home.png" alt="">
           </div>
         </div>
+
+
+
         <div id="screen4" class="hidden">
           <div class="controls">
             <img src="images/arrow-left.png" class="back" alt="">
@@ -121,46 +255,7 @@
               </div>
             </div>
             <p id="food-info-desc">Relieves pain in your head and helps to relax. Relieves headaches, sinus congestion, and neck tension with cool, tingling relief in minutes!</p>
-            <div class="nutritional-info">
-              <h4 class="nutrition-button">Click to see nutritional information</h4>
-              <table class="nutritional-info--table">
-                <tr>
-                  <th class="left">Calories</th>
-                  <th id="calories" class="right"></th>
-                </tr>
-                <tr>
-                  <th class="left">Fats</th>
-                  <th id="fats" class="right"></th>
-                </tr>
-                <tr>
-                  <th class="left">Carbohydrates</th>
-                  <th  id="carbs" class="right"></th>
-                </tr>
-                <tr>
-                  <th class="left">Fiber</th>
-                  <th  id="fiber" class="right"></th>
-                </tr>
-                <!-- <tr>
-                  <th class="left">Sugar</th>
-                  <th  id="sugar" class="right">7.7g</th>
-                </tr> -->
-                <tr>
-                  <th class="left">Protein</th>
-                  <th  id="proteins" class="right"></th>
-                </tr>
-                <tr>
-                  <th class="left">Vitamins</th>
-                  <th  id="vits" class="right"></th>
-                </tr>
-              </table>
-              <div class="recipe-container">
-                <h5 class="recipes">
-                  Healthy Recipes
-                </h5>
-                <ul class="recipe-list">
-                </ul>
-              </div>
-            </div>
+
           </div>
           <div class="browse-button">
             <h2 class="browse">Browse All Foods<img src="images/browse.png" alt=""></h2>
@@ -169,9 +264,9 @@
             <img src="images/Home.png" alt="">
           </div>
         </div> <!-- Screen 4 -->
-        <div id="screen3" class="hidden">
+        <!-- <div id="screen3" class="hidden">
           <div class="header">
-            <img src="https://github.com/Rajeev-Gill/awt-app/blob/master/images/Logomark.png?raw=true" alt="">
+            <img src="images/logomark.png" alt="">
           </div>
           <div class="controls">
             <img src="images/arrow-left.png" class="back" alt="">
@@ -189,7 +284,7 @@
           <div class="footer">
             <img src="images/Home.png" alt="">
           </div>
-        </div> <!-- Screen 5 -->
+        </div> Screen 5 -->
     </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

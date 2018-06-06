@@ -37,6 +37,9 @@ ul {
 
 .footer {
   cursor: pointer;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 /***********\
@@ -51,15 +54,15 @@ ul {
 }
 
 .screen1-sect1 {
-  padding: 35% 0 20px 0;
+  padding: 20px 0 20px 0;
   margin: 0 auto;
 }
 
-.screen1-sect1 img {
-  width: 30px;
-  height: auto;
+.screen1-sect1 h1 {
   display: block;
   margin: 0 auto;
+  text-align: center;
+  color: white;
 }
 .screen1-sect2 {
   min-width: 286px;
@@ -127,27 +130,31 @@ ul.peppermint-dots > li.peppermint-active-dot > span {
 }
 
 .header {
-  background: url('../images/background.png');
+  background: #FFF;
   display: flex;
 }
 
 .header img {
-  height: 50%;
-  width: 10%;
-  margin: 20px auto;
+  display: block;
+  height: 46px;
+  width: 46px;
+  margin: 10px auto;
 }
 
 .search input {
   display: block;
-  margin: 10px auto 10px auto;
+
   padding: 16px;
-  background: hsla(0, 0%, 93%, 1);
+  background: ;
   border: none;
-  min-width: 97%;
+  width: 100%;
   font-size: 1.4em;
   text-align: center;
   outline: none;
-  transition: outline 0.5s;
+  transition: background 0.3s;
+  background: #F7F7F7 url('../images/search-ic.png') no-repeat 95% center;
+  text-align: left;
+  font-size: 16px;
 }
 
 .search input::placeholder {
@@ -155,40 +162,150 @@ ul.peppermint-dots > li.peppermint-active-dot > span {
 }
 
 .search input:focus {
-  outline: 2px solid green;
+  background: #d4d4d4;
 }
 
 .list-header {
-  margin: 20px auto;
-  font-size: 1em;
-  color: #A9E813;
-}
-
-.list {
-  height: 45%;
-}
-
-.issue {
-  padding-left: 20px;
-  padding: 20px 20px 20px 20px;
-  border-bottom: 1px solid gray;
   display: flex;
-  justify-content: space-between;
+  font-size: 10px;
+  font-weight: bold;
+  color: #FFF;
+  background: #60D017;
 }
 
-.issue img {
+#symptoms {
+  width: 50%;
+  text-align: center;
+}
+
+#ingredients {
+  width: 50%;
+  text-align: center;
+}
+
+#symptoms h2 {
+  margin: 25px auto 15px auto;
+  font-weight: 600;
+}
+
+#ingredients h2 {
+  margin: 25px auto 15px auto;
+  font-weight: 600;
+}
+
+#ingredientSymptoms {
+  width: 50%;
+  text-align: center;
+}
+
+#ingredientIngredients {
+  width: 50%;
+  text-align: center;
+}
+
+#ingredientSymptoms h2 {
+  margin: 25px auto 15px auto;
+  font-weight: 600;
+}
+
+#ingredientIngredients h2 {
+  margin: 25px auto 15px auto;
+  font-weight: 600;
+}
+
+.symptoms-arrow {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #FFF;
+  margin: 0 auto;
+}
+
+.ingredients-arrow {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #FFF;
+  margin: 0 auto;
+}
+
+/*
+Highest Level List
+*/
+.list {
+  height: 67%;
+  margin-bottom: 63px;
+}
+
+/*
+Highest Level Menu Items
+*/
+.list ul li {
+  /* padding-left: 20px; */
+  /* padding: 20px 20px 20px 20px; */
+  border-bottom: 1px solid gray;
+  /* display: flex; */
+  /* padding-bottom: 30px; */
+  padding: 23px 0;
+}
+
+/* .list ul li::after {
+  content: "";
+
+} */
+
+.list ul li img {
   height: 30%;
   width: auto;
   position: relative;
   top: 5px;
+  /* margin-right: 10px; */
+  margin: 6px 10px;
 }
 
-.browse {
-  text-align: center;
+/*
+2nd Level List Header
+*/
+.list ul li p {
+  width: auto;
+  display: inline;
+  position: relative;
 }
 
-.browse img {
-  margin-left: 10px;
+
+/*
+2nd Level List
+*/
+.list ul li ul {
+  margin-top: 25px;
+}
+
+/*
+FIRST 2nd Level List Item
+*/
+.list ul li ul li:first-of-type {
+  border-top: 1px solid gray;
+}
+
+.list ul li ul li:last-of-type {
+  border: none;
+  padding-bottom: 0;
+}
+
+/*
+2nd Level List Item ARROW
+*/
+.list ul li ul li img {
+  margin-left: 30px;
+}
+
+/*
+2nd Level List Item
+*/
+.list ul li ul li {
+
 }
 
 .footer {
@@ -210,92 +327,109 @@ ul.peppermint-dots > li.peppermint-active-dot > span {
 
 \***********/
 
-.controls {
-  display: flex;
-  align-items: center;
-  padding-left: 20px;
-  border-bottom: 1px solid gray;
-}
-
-.controls h4 {
-  position: relative;
-  width: 92%;
-  text-align: center;
-}
-
-.food-item {
+/* .food-item {
   padding-left: 20px;
   padding: 20px 0 20px 20px;
   border-top: 1px solid gray;
   border-bottom: 1px solid gray;
+} */
+
+.location-bar p {
+  color: #C8C8C8;
+  font-size: 10px;
+  margin-left: 5px;
 }
 
-#screen3 {
-  background: white;
-  height: 100%;
+.location-bar img {
+  display: inline;
+  margin: auto 5px;
 }
 
-/***********\
-
-#SCREEN 4
-
-\***********/
-
-#screen4 {
-  background: white;
+.ingredient-info {
+  margin-bottom: 63px;
 }
 
-.food-info {
-    padding: 0 20px 40px 20px;
+.ingredient-info-img {
+  width: 100%;
 }
 
-.food-info--header {
-  display: flex;
-  align-items: center;
-  /* width: 230px; */
-  margin: 0 auto;
+.ingredient-info-container {
+  height: 225px;
+  overflow: hidden !important;
+  position: relative;
 }
 
-.food-info--header div {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 21px auto;
+.ingredient-info-header {
+  position: absolute;
+    padding: 9px 0 9px 5px;
+    bottom: -11px;
+    width: 100%;
+    background: #5fd0184f;
+    color: white;
+    font-size: 1em;
 }
 
-.food-info--header img {
-  width: 130px;
-  height: auto;
-  margin-right: 40px;
+.desc {
+    font-weight: 100;
+    margin: 20px 40px;
 }
 
-.food-info p {
-  margin: 0 auto;
-  /* width: 230px; */
+th.left span {
+    color: #C8C8C8;
+    font-size: 10px;
 }
 
 .nutrition-button {
   cursor: pointer;
+  padding: 9px 0 9px 5px;
+  margin: 0;
+  background: #5fd0184f;
+  color: white;
+  font-size: 1em;
 }
 
 .nutritional-info--table{
-  margin: 0 10px 0 0;
+  margin: 20px 20px;
   height: 0px;
   font-size: 0;
   display: none;
   transition: height 1s;
 }
 
-th.left {
-  text-align: left;
+.nutritional-info--table.table-expanded {
+  height: 205px;
+  font-size: 1em;
+  display: table;
 }
 
-th.right {
-  text-align: right;
+.recipe-container {
+  overflow: hidden !important;
 }
 
-#vits {
-  font-size: 0.43em;
+.recipes {
+  cursor: pointer;
+    padding: 9px 0 9px 5px;
+    margin: 0;
+    background: #5fd0184f;
+    color: white;
+    font-size: 1em;
+}
+
+.recipe-list {
+  height: 0;
+  transition: height 1s;
+}
+
+.recipe-list.expanded {
+  height: auto;
+}
+
+.recipe-list li:first-of-type {
+  margin-top: 0;
+}
+
+.recipe-list li:last-of-type {
+  margin-bottom: 0;
 }
 
 .recipe-list li {
@@ -314,6 +448,117 @@ th.right {
   color: black;
   text-decoration: none;
 }
+
+.grocery-info-container {
+  overflow: hidden !important;
+}
+
+.grocery-header {
+  cursor: pointer;
+    padding: 9px 0 9px 5px;
+    margin: 0;
+    background: #5fd0184f;
+    color: white;
+    font-size: 1em;
+}
+
+.grocery-list {
+  height: 0;
+}
+
+.grocery-list.expanded {
+  height: auto;
+}
+
+.grocery-list li {
+  display: flex;
+  padding-top: 10px;
+}
+
+.grocery-list li p {
+  font-size: 0.8em;
+  margin: auto 0;
+}
+
+.grocery-list li img {
+
+}
+
+.grocery-list li p:first-of-type span {
+    font-size: 0.8em;
+    color: #d3d3d3;
+    display: block;
+}
+
+.grocery-list li p:first-of-type {
+  width: 60%;
+}
+
+.grocery-list li p:last-of-type {
+
+}
+
+#screen3 {
+  background: white;
+  height: 100%;
+}
+
+/***********\
+
+#SCREEN 4
+
+\***********/
+
+#screen4 {
+  background: white;
+}
+
+/* .food-info {
+    padding: 0 20px 40px 20px;
+}
+
+.food-info--header {
+  display: flex;
+  align-items: center;
+   width: 230px;
+  margin: 0 auto;
+}
+
+.food-info--header div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 21px auto;
+}
+
+.food-info--header img {
+  width: 130px;
+  height: auto;
+  margin-right: 40px;
+}
+
+.food-info p {
+  margin: 0 auto;
+  width: 230px;
+} */
+
+
+
+
+
+th.left {
+  text-align: left;
+}
+
+th.right {
+  text-align: right;
+}
+
+#vits {
+  font-size: 0.43em;
+}
+
+
 /*------------------------------------*\
   #Utilities
 
@@ -331,10 +576,8 @@ th.right {
   display: block;
 }
 
-.nutritional-info--table.table-expanded {
-  height: 205px;
-  font-size: 1em;
-  display: table;
+.rotated-down {
+  transform: rotate(90deg);
 }
 
 /*------------------------------------*\

@@ -1,74 +1,184 @@
 foods = [
   {
-    "foodItemName": "Artichoke",
-    "foodItemBenefits": ["skin","fat"],
-    "foodItemDesc": "With its beautiful armour-like exterior and delicious savoury-sweet heart, this vegetable is technically not a vegetable at all but the bud of a flowering plant from the thistle family.",
-    "image": "../awt-app/images/artichoke.jpg"
+  "foodItemName": "Honey",
+  "id": "0",
+  "category": "throat",
+  "desc": "Honey has been used to treat sore throats for centuries. It has antibacterial properties, and acts as a hypertonic osmotic. Meaning that it can take water out of inflamed tissue, soothing the throat. Add a couple of teaspoons into a herbal tea or hot lemon juice.",
+  "img": "https://images.pexels.com/photos/33260/honey-sweet-syrup-organic.jpg?auto=compress&cs=tinysrgb&h=650&w=940"
   },
   {
-    "foodItemName": "Bell Pepper",
-    "foodItemBenefits": ["skin","fat"],
-    "foodItemDesc": "Bell peppers - especially varieties that mature into dazzling shades of yellow, orange, and red - are well-known for the diverse vitamin content. ",
-    "image": "../awt-app/images/bellpepper.jpeg"
+  "foodItemName": "Lemon",
+  "id": "1",
+  "category": "throat",
+  "desc": "Lemon juice helps to shrink swollen tissue and creates a hostile environment for bacteria, due to its acidic nature. Lemon also rich in Vitamin C, which boosts the immune system.",
+  "img": "https://images.pexels.com/photos/1002543/pexels-photo-1002543.jpeg?auto=compress&cs=tinysrgb&h=650&w=940%201x,%20https://images.pexels.com/photos/1002543/pexels-photo-1002543.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940%202x"
   },
   {
-    "foodItemName": "Carrot",
-    "foodItemBenefits": ["skin","fat","cancer"],
-    "foodItemDesc": "Carrots are a vegetable commonly enjoyed in both raw and cook form. They are rich in beta-carotene and assist bone health",
-    "image": "../awt-app/images/carrot.jpeg"
+  "foodItemName": "Turmeric",
+  "id": "2",
+  "category": "throat",
+  "desc": "Turmeric works against a sore throat by inhibiting inflammation and provides relief symptoms likeburning, itching (or that scratchy feeling), pain and swelling within the throat.Take half a spoon of turmeric and coarsely grounded black pepper and add it to a glass of boiling milk. Drink this mixture twice in a day (in the morning and evening) to find relief from a sore throat.",
+  "img": "https://images.pexels.com/photos/33615/spices-flavorings-seasoning-food.jpg?auto=compress&cs=tinysrgb&h=350%201x,%20https://images.pexels.com/photos/33615/spices-flavorings-seasoning-food.jpg?auto=compress&cs=tinysrgb&dpr=2&h=350%202x"
   },
   {
-    "foodItemName": "Dill",
-    "foodItemBenefits": ["muscle","cholesterol"],
-    "foodItemDesc": "Providing a tangy addition to pickles, salad dressing and fish dishes, fresh dill is available at markets during the summer and early fall while dried dill is available throughout the year." ,
-    "image": "https://github.com/Rajeev-Gill/awt-app/blob/master/images/dill.jpg?raw=true"
+  "foodItemName": "Ginger",
+  "id": "3",
+  "category": "throat",
+  "desc": "Though it has a spicy flavour, ginger works brilliantly as a sore-throat remedy. It helps flush out toxins from your body and boosts your blood circulation. Its anti-inflammatory properties also help kill bad bacteria. So, grate some ginger root in in a warm, soothing cup of tea. ",
+  "img": "https://images.pexels.com/photos/161556/ginger-plant-asia-rhizome-161556.jpeg?auto=compress&cs=tinysrgb&h=350%201x,%20https://images.pexels.com/photos/161556/ginger-plant-asia-rhizome-161556.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350%202x"
   },
   {
-    "foodItemName": "Fennel",
-    "foodItemBenefits": ["skin","fat","muscle","cholesterol","cancer"],
-    "foodItemDesc": "Fennel is crunchy and slightly sweet, adding a refreshing contribution to the mediterranean cuisines. Most often associated with Italian cooking,",
-    "image": "../awt-app/images/fennel.jpeg"
+  "foodItemName": "Whiskey",
+  "id": "4",
+  "category": "throat",
+  "desc": "Adding a spoonful of whiskey to a glass of warm water and gargling it, the whiskey will numb the sore throat.",
+  "img": "https://images.pexels.com/photos/372959/pexels-photo-372959.jpeg?auto=compress&cs=tinysrgb&h=3501x, https://images.pexels.com/photos/372959/pexels-photo-372959.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=3502x"
   },
   {
-    "foodItemName": "Green Beans",
-    "foodItemBenefits": ["cancer","cholesterol","immune"],
-    "foodItemDesc": "Commonly available In the produce section of your local store. Green beans and other legumes provide concentrated amounts of fiber, folate, and numerous minerals.",
-    "image": "../awt-app/images/greenbeans.jpeg"
+  "foodItemName": "Garlic",
+  "id": "5",
+  "category": "throat",
+  "desc": "Garlic has immune-stimulating effects, and is antimicrobial, and antibacterial, meaning it fights both viruses, and bacteria.",
+  "img": "https://images.pexels.com/photos/928251/pexels-photo-928251.jpeg?auto=compress&cs=tinysrgb&h=3501x, https://images.pexels.com/photos/928251/pexels-photo-928251.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=3502x"
   },
   {
-    "foodItemName": "Jalapeños",
-    "foodItemBenefits": ["cancer","immune"],
-    "foodItemDesc": "Delicious in cornbread, mango salsa, stuffed with cream cheese or often enjoyed as poppers at the local pub, most everyone knows the jalapeno pepper can be one serious pepper.",
-    "image": "../awt-app/images/jalapenos.jpeg"
+  "foodItemName": "Yoghurt",
+  "id": "6",
+  "category": "menstruation",
+  "desc": "The calcium and good bacteria cultures in yoghurt promotes healthy digestion and reduce the symptoms of PMS",
+  "img": "https://images.pexels.com/photos/128865/pexels-photo-128865.jpeg?auto=compress&cs=tinysrgb&h=3501x, https://images.pexels.com/photos/128865/pexels-photo-128865.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=3502x"
   },
   {
-    "foodItemName": "Kale",
-    "foodItemBenefits": ["Cancer","fat","antImf"],
-    "foodItemDesc": "One cup of kale has only 36 calories, 5 grams of fiber and 0 grams of fat. It is great for aiding in digestion and elimination with its great fiber content. It’s also filled with so many nutrients, vitamins, folate and magnesium as well as those listed below.",
-    "image": "../awt-app/images/kale.jpeg"
+  "foodItemName": "Chamomile Tea",
+  "id": "7",
+  "category": "menstruation",
+  "desc": "Chamomile tea is a muscle relaxant and has been known to reduce period pain, and in some cases anxiety and distress caused by periods.",
+  "img": "https://images.pexels.com/photos/405238/pexels-photo-405238.jpeg?auto=compress&cs=tinysrgb&h=3501x, https://images.pexels.com/photos/405238/pexels-photo-405238.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=3502x"
   },
   {
-    "foodItemName": "Leeks",
-    "foodItemBenefits": ["cancer","cholesterol","immune"],
-    "foodItemDesc": "Like garlic and onion, leeks are a member of the allium family, but have their own distinct flavour - quite harsh when raw (only very young leeks are eaten this way) but, when cooked, very delicate, like a mild onion but with a hint of sweetness.",
-    "image": "../awt-app/images/leeks.jpeg"
+  "foodItemName": "Whole Grains",
+  "id": "8",
+  "category": "menstruation",
+  "desc": "Whole grains are a great source of magnesium, which can alleviate period pain, and fibre, to promote healthy digestion",
+  "img": "https://images.pexels.com/photos/575822/pexels-photo-575822.jpeg?auto=compress&cs=tinysrgb&h=3501x, https://images.pexels.com/photos/575822/pexels-photo-575822.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=3502x"
   },
   {
-    "foodItemName": "Onion",
-    "foodItemBenefits": ["cancer","cholesterol"],
-    "foodItemDesc": "Onions were historically as a preventative medicine during epidemics of cholera and the plague. They were apparently eaten by Roman emperor Nero as a cure for colds.",
-    "image": "../awt-app/images/onion.jpeg"
+  "foodItemName": "Bananas",
+  "id": "9",
+  "category": "menstruation",
+  "desc": "Bananas ease bloating and and help muscle to relax. Bananas are also a great source of potassium which helps regulate blood pressure and send oxygen to the brain.",
+  "img":"https://images.pexels.com/photos/37547/suit-business-man-business-man-37547.jpeg?auto=compress&cs=tinysrgb&h=3501x,https://images.pexels.com/photos/37547/suit-business-man-business-man-37547.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=3502x"
   },
   {
-    "foodItemName": "Parsnip",
-    "foodItemBenefits": ["antImf","fat"],
-    "foodItemDesc": "Parsnips have creamy white colour and an earthy but sweet flavour and are great used in hearty winter roasts, soups and stews.",
-    "image": "../awt-app/images/parsnip.jpeg"
+  "foodItemName": "Fatty fish",
+  "id": "10",
+  "category": "menstruation",
+  "desc": "Fatty fish, like Tuna and Salmon are rich in Omega 3, which has been known to ease muscle tension and reduce cramps during menstruation.",
+  "img": "https://images.pexels.com/photos/629093/pexels-photo-629093.jpeg?auto=compress&cs=tinysrgb&h=3501x, https://images.pexels.com/photos/629093/pexels-photo-629093.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=3502x"
   },
   {
-    "foodItemName": "Radish",
-    "foodItemBenefits": ["antImf","cholesterol"],
-    "foodItemDesc": "Radishes have a peppery flavour and a crisp, crunchy texture. Among the most popular varieties are the small, cherry-sized common variety which has a red skin and white flesh",
-    "image": "../awt-app/images/radish.jpeg"
-  }
+  "foodItemName": "Broccoli",
+  "id": "11",
+  "category": "menstruation",
+  "desc": "Garlic has immune-stimulating effects, and is antimicrobial, and antibacterial, meaning it fights both viruses, and bacteria.",
+  "img": "https://images.pexels.com/photos/47347/broccoli-vegetable-food-healthy-47347.jpeg?auto=compress&cs=tinysrgb&h=3501x,https://images.pexels.com/photos/47347/broccoli-vegetable-food-healthy-47347.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=3502x"
+  },
+  {
+  "foodItemName": "Spinach",
+  "id": "12",
+  "category": "menstruation",
+  "desc": "During menstruation, the body’s iron levels drop which leads to feeling sluggish or light-headed. Eating spinach will help even out the iron levels. Just make sure to cook enough of it!",
+  "img": "https://images.pexels.com/photos/1095550/pexels-photo-1095550.jpeg?auto=compress&cs=tinysrgb&h=3501x, https://images.pexels.com/photos/1095550/pexels-photo-1095550.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=3502x"
+  },
+  {
+  "foodItemName": "Dark Chocolate",
+  "id": "13",
+  "category": "menstruation",
+  "desc": "Dark chocolate is full of antioxidants and magnesium to help ease cramps and mood swings. It also stimulates the production of endorphins.",
+  "img": "https://images.pexels.com/photos/6345/dark-brown-milk-candy.jpg?auto=compress&cs=tinysrgb&h=3501x, https://images.pexels.com/photos/6345/dark-brown-milk-candy.jpg?auto=compress&cs=tinysrgb&dpr=2&h=3502x"
+  },
+  {
+  "foodItemName": "Jacket Potato",
+  "id": "14",
+  "category": "headaches",
+  "desc": "If your headache is alcohol related, eating potassium rich foods can relieve the effects of alcohol.",
+  "img": "https://images.pexels.com/photos/111130/potatoes-ketchup-murder-blood-111130.jpeg?auto=compress&cs=tinysrgb&h=3501x, https://images.pexels.com/photos/111130/potatoes-ketchup-murder-blood-111130.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=3502x"
+  },
+  {
+  "foodItemName": "Watermelon",
+  "id": "15",
+  "category": "headaches",
+  "desc": "A major cause of headaches is dehydration, and the natural water contained in both fruits and vegetables contains essential minerals, like magnesium, that are key in headache prevention. Try making a watermelon smoothie next time you get a headache instead of reaching for the paracetamol.",
+  "img": "https://images.pexels.com/photos/1068534/pexels-photo-1068534.jpeg?auto=compress&cs=tinysrgb&h=3501x, https://images.pexels.com/photos/1068534/pexels-photo-1068534.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=3502x"
+  },
+  {
+  "foodItemName": "Coffee",
+  "id": "16",
+  "category": "headaches",
+  "desc": "Coffee is a vasoconstrictor, which means it can help reduce the size of blood vessels, which is good for curing alcohol-induced headaches. Be careful though, too much caffeine can increase dehydration, leading to a worse headache.",
+  "img": "https://images.pexels.com/photos/6347/coffee-cup-working-happy.jpg?auto=compress&cs=tinysrgb&h=3501x, https://images.pexels.com/photos/6347/coffee-cup-working-happy.jpg?auto=compress&cs=tinysrgb&dpr=2&h=3502x"
+  },
+  {
+  "foodItemName": "Almonds",
+  "id": "17",
+  "category": "headaches",
+  "desc": "The magnesium in almonds protects from headaches, by relaxing blood vessels.",
+  "img": "https://images.pexels.com/photos/1013420/pexels-photo-1013420.jpeg?auto=compress&cs=tinysrgb&h=3501x, https://images.pexels.com/photos/1013420/pexels-photo-1013420.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=3502x"
+  },
+  {
+  "foodItemName": "Spicy salsa",
+  "id": "18",
+  "category": "headaches",
+  "desc": "If the headache is due to sinus congestion, eating spicy foods will help decrease congestion and open the airways, helping the headache to pass.",
+  "img": "https://images.pexels.com/photos/35010/paprika-fruit-the-inside-of-the-peppers-the-grain-of-paprika.jpg?auto=compress&cs=tinysrgb&h=3501x, https://images.pexels.com/photos/35010/paprika-fruit-the-inside-of-the-peppers-the-grain-of-paprika.jpg?auto=compress&cs=tinysrgb&dpr=2&h=3502x"
+  },
+  {
+  "foodItemName": "Sesame seeds",
+  "id": "19",
+  "category": "headaches",
+  "desc": "Sesame seeds are rich in Vitamin E, which improves circulation, to prevent headaches",
+  "img": "https://images.pexels.com/photos/47347/broccoli-vegetable-food-healthy-47347.jpeg?auto=compress&cs=tinysrgb&h=3501x,https://images.pexels.com/photos/47347/broccoli-vegetable-food-healthy-47347.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=3502x"
+  },
+  {
+  "foodItemName": "Salmon",
+  "id": "20",
+  "category": "musclePain",
+  "desc": "Salmon is full of Omega-3 fatty acids which has been proven to alleviate arthritis pain",
+  "img": "https://images.pexels.com/photos/842142/pexels-photo-842142.jpeg?auto=compress&cs=tinysrgb&h=3501x, https://images.pexels.com/photos/842142/pexels-photo-842142.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=3502x"
+  },
+  {
+  "foodItemName": "Cherries",
+  "id": "21",
+  "category": "musclePain",
+  "desc": "Sour cherries have been known to help treat gout, but in a recent study, athletes who drank sour cherry juice for seven days prior to an intense running event showed reduced muscle-pain after the race",
+  "img": "https://images.pexels.com/photos/47347/broccoli-vegetable-food-healthy-47347.jpeg?auto=compress&cs=tinysrgb&h=3501x,https://images.pexels.com/photos/47347/broccoli-vegetable-food-healthy-47347.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=3502x"
+  },
+  {
+  "foodItemName": "Oranges",
+  "id": "22",
+  "category": "musclePain",
+  "desc": "An antioxidant called beta-cryptoxanthin, found in oranges and other orange fruits and veggies such as sweet potato and cantaloupe, has been found to help reduce the risk of anti-inflammatory conditions like rheumatoid arthritis",
+  "img": "https://images.pexels.com/photos/820905/pexels-photo-820905.jpeg?auto=compress&cs=tinysrgb&h=3501x, https://images.pexels.com/photos/820905/pexels-photo-820905.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=3502x"
+  },
+  {
+  "foodItemName": "Green Tea",
+  "id": "23",
+  "category": "acne",
+  "desc": "Green tea is filled the antioxidants that can protect from environmental stressors. Drink more green tea throughout the day.",
+  "img": "https://images.pexels.com/photos/428615/teacup-cup-of-tea-tee-drink-428615.jpeg?auto=compress&cs=tinysrgb&h=3501x, https://images.pexels.com/photos/428615/teacup-cup-of-tea-tee-drink-428615.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=3502x"
+  },
+  {
+  "foodItemName": "Oysters",
+  "id": "24",
+  "category": "acne",
+  "desc": "Several studies have indicated that the mineral zinc may reduce the effects of acne. It’s best to get zinc from your food, however, as too much in supplements (more than 100 mg a day) can result in side effects.",
+  "img": "https://images.unsplash.com/photo-1464786255367-4a86027a5975?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7943677f43115d59cfe3e4bb956d6fd8&auto=format&fit=crop&w=667&q=80667w"
+  },
+  {
+  "foodItemName": "Probiotics",
+  "id": "25",
+  "category": "acne",
+  "desc": "These have been found to reduce inflammation in the gut, which may help reduce acne.",
+  "img": "https://images.pexels.com/photos/209460/pexels-photo-209460.jpeg?auto=compress&cs=tinysrgb&h=3501x, https://images.pexels.com/photos/209460/pexels-photo-209460.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=3502x"
+  },
 ]
